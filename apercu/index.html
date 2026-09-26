@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
+</head>
+<body style="margin:0">
+<title>Nouveau site Antonin Atger</title>
+<style>
+@font-face { font-family: 'Space Grotesk'; font-weight: 600; font-display: swap; src: url(static/polices/space-grotesk-latin-600-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 500; font-display: swap; src: url(static/polices/space-grotesk-latin-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 400; font-display: swap; src: url(static/polices/inter-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 500; font-display: swap; src: url(static/polices/inter-latin-500-normal.woff2) format('woff2'); }
+:root {
+  --papier: #f4f6f8; --surface: #ffffff; --encre: #14222c; --encre-douce: #3d4f5c; --encre-pale: #586874; --bord: #dce3e8;
+  --bleu: #1b6a8f; --bleu-fonce: #134f6b; --sapin: #2e7565; --rose: #a44d67;
+  --titres: 'Space Grotesk', 'Segoe UI', Helvetica, Arial, sans-serif; --texte: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+body { background: var(--papier); color: var(--encre); font: 16.5px/1.6 var(--texte); padding-inline: 20px; }
+.som { max-width: 1040px; margin: 0 auto; padding-block: 56px 110px; }
+.som__filet { display: block; width: 72px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--sapin), var(--bleu) 50%, var(--rose)); margin-bottom: 26px; }
+.som__sur { font-size: 12.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--encre-pale); font-weight: 500; margin: 0 0 10px; }
+.som h1 { font: 600 clamp(2.3rem, 5.4vw, 3.9rem)/1.04 var(--titres); letter-spacing: -.03em; margin: 0 0 18px; text-wrap: balance; max-width: 15em; }
+.som h1 em { font-style: normal; color: var(--bleu); }
+.som__intro { font-size: 1.15rem; color: var(--encre-douce); max-width: 36em; margin: 0 0 28px; }
+.som__cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 54px; }
+.btn-entrer { display: inline-flex; align-items: center; gap: 10px; background: var(--bleu); color: #fff; text-decoration: none; font-weight: 500; padding: 14px 22px; border-radius: 6px; }
+.btn-entrer:hover { background: var(--bleu-fonce); }
+.btn-entrer:focus-visible, .som a:focus-visible { outline: 3px solid #7fc4e6; outline-offset: 3px; }
+.som__cta small { color: var(--encre-pale); font-size: 14px; }
+.som__comment { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-bottom: 58px; }
+.etape { background: var(--surface); border: 1px solid var(--bord); border-radius: 10px; padding: 18px 20px; }
+.etape b { display: block; font: 600 1.1rem/1.25 var(--titres); letter-spacing: -.02em; margin-bottom: 6px; }
+.etape p { margin: 0; color: var(--encre-douce); font-size: 15px; }
+.som h2 { font: 600 1.55rem/1.2 var(--titres); letter-spacing: -.025em; margin: 0 0 18px; }
+.plan { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px 22px; }
+.plan section { border-top: 3px solid var(--c, var(--bleu)); padding-top: 14px; }
+.plan h3 { font: 600 1rem/1.3 var(--texte); margin: 0 0 10px; color: var(--c, var(--bleu)); letter-spacing: .01em; }
+.plan ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+.plan a { color: var(--encre); text-decoration: none; border-bottom: 1px solid var(--bord); }
+.plan a:hover { color: var(--c, var(--bleu)); border-color: currentColor; }
+.plan .p-intervenant { --c: var(--bleu); } .plan .p-chercheur { --c: var(--sapin); } .plan .p-romancier { --c: var(--rose); } .plan .p-neutre { --c: var(--encre-douce); }
+.som__note { margin-top: 48px; font-size: 14px; color: var(--encre-pale); max-width: 44em; }
+@media (max-width: 900px) { .plan { grid-template-columns: 1fr 1fr; } .som__comment { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .plan { grid-template-columns: 1fr; } .som { padding-block: 36px 110px; } }
+</style>
+<div class="som">
+  <span class="som__filet" aria-hidden="true"></span>
+  <p class="som__sur">Version de travail · septembre 2026</p>
+  <h1>Le nouveau site d'Antonin Atger, <em>avant sa mise en ligne</em>.</h1>
+  <p class="som__intro">Merci de prendre quelques minutes pour le parcourir. Je cherche surtout à savoir si l'on comprend vite ce que je propose, si l'on trouve facilement ce qu'on cherche, et si l'ensemble donne envie.</p>
+  <div class="som__cta">
+    <a class="btn-entrer" href="accueil.html">Entrer sur le site <span aria-hidden="true">→</span></a>
+    <small>Commencez par la page d'accueil, puis naviguez librement.</small>
+  </div>
+
+  <div class="som__comment">
+    <div class="etape"><b>Parcourez comme un visiteur</b><p>Un enseignant qui cherche une intervention, un lecteur curieux des romans, un organisateur de médiathèque : mettez-vous à la place de l'un d'eux.</p></div>
+    <div class="etape"><b>Cliquez sur « Donner mon avis »</b><p>Le bouton est en bas à droite de chaque page. Écrivez votre remarque sur la page que vous regardez, même en une phrase.</p></div>
+    <div class="etape"><b>Envoyez-la</b><p>Cliquez sur « Envoyer à Antonin » : votre remarque m'arrive directement, sans compte ni inscription.</p></div>
+  </div>
+
+  <h2>Toutes les pages de l'aperçu</h2>
+  <div class="plan">
+    <section class="p-neutre"><h3>Présentation</h3><ul><li><a href="accueil.html">Accueil</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="parcours.html">Parcours et projets sur mesure</a></li><li><a href="presse-et-medias.html">Presse et médias</a></li><li><a href="contact.html">Contact</a></li><li><a href="accessibilite.html">Accessibilité</a></li></ul></section>
+    <section class="p-intervenant"><h3>Interventions</h3><ul><li><a href="interventions.html">Interventions</a></li><li><a href="formations.html">Formations</a></li><li><a href="jeux.html">Jeux pédagogiques</a></li><li><a href="fiche-a-distance.html">Intervention à distance</a></li><li><a href="fiche-arnaques-en-ligne.html">Se protéger des arnaques en ligne</a></li><li><a href="fiche-ateliers-d-ecriture.html">Ateliers d&#x27;écriture heureux</a></li><li><a href="fiche-conference-parents.html">Conférence parents : déjouer les fake news à l&#x27;ère de l&#x27;IA</a></li><li><a href="fiche-dejouer-les-pieges-de-la-rhetorique.html">Déjouer les pièges de la rhétorique</a></li><li><a href="fiche-desinformation-au-dela-des-fake-news.html">Désinformation : au-delà des fake news</a></li><li><a href="fiche-en-anglais.html">In English: Critical Thinking &amp; Media Literacy</a></li><li><a href="fiche-fake-news-environnement.html">Fake news et questions environnementales</a></li><li><a href="fiche-fake-news-et-esprit-critique.html">Fake news et esprit critique</a></li><li><a href="fiche-formation-enseignants.html">Formation enseignants : l&#x27;esprit critique en classe</a></li><li><a href="fiche-formation-entreprise.html">Formation en entreprise : information et désinformation</a></li><li><a href="fiche-la-magie-des-histoires.html">La magie des histoires</a></li><li><a href="fiche-le-piege-des-influenceurs.html">Le piège des influenceurs</a></li><li><a href="fiche-parler-a-un-complotiste.html">Parler à un complotiste</a></li><li><a href="fiche-retrouver-clara.html">Retrouver Clara : une enquête sur le harcèlement</a></li></ul></section>
+    <section class="p-romancier"><h3>Livres et écrits</h3><ul><li><a href="livres.html">Livres</a></li><li><a href="ecrits.html">Nouvelles et poèmes</a></li><li><a href="poemes-doccasion.html">Poèmes d&#x27;occasion</a></li><li><a href="libre-note-dintention-et-synopsis.html">‘Libre : note d&#x27;intention et synopsis</a></li></ul></section>
+    <section class="p-chercheur"><h3>Blog</h3><ul><li><a href="blog.html">Blog</a></li><li><a href="chroniques.html">Chroniques de l&#x27;actualité</a></li><li><a href="blog-esprit-critique.html">Esprit critique</a></li><li><a href="blog-actualites.html">Actualités</a></li><li><a href="blog-conseils-d-ecriture.html">Conseils d&#x27;écriture</a></li><li><a href="blog-ecrits.html">Écrits</a></li></ul></section>
+  </div>
+  <p class="som__note">C'est un aperçu : les formulaires ne s'envoient pas, les vidéos s'ouvrent sur YouTube, et seule une partie des billets du blog est incluse. Un lien vers une page absente affiche un petit message.</p>
+</div>
+
+<script>window.APX_WEB3 = "ef1fe549-c616-4a27-a6c2-97f06caa913d";</script>
+<!-- ===== Aperçu : bouton d'avis (ajouté seulement dans la version de relecture) ===== -->
+<style>
+.apx-bouton { position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 9000; display: inline-flex; align-items: center; gap: 8px; background: #14222c; color: #fff; border: 0; border-radius: 30px; padding: 12px 18px 12px 14px; font: 500 15px/1 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif; cursor: pointer; box-shadow: 0 14px 30px -12px rgba(12,22,30,.55); }
+.apx-bouton:hover { background: #1b6a8f; }
+.apx-bouton:focus-visible, .apx-panneau button:focus-visible, .apx-panneau a:focus-visible, .apx-panneau textarea:focus-visible, .apx-panneau input:focus-visible { outline: 3px solid #7fc4e6; outline-offset: 2px; }
+.apx-bouton svg { width: 18px; height: 18px; }
+.apx-panneau { position: fixed; right: 18px; bottom: calc(80px + env(safe-area-inset-bottom, 0px)); z-index: 9001; width: min(380px, calc(100vw - 36px)); max-height: calc(100vh - 110px); overflow: auto; background: #fff; color: #14222c; border: 1px solid #dce3e8; border-radius: 12px; box-shadow: 0 30px 60px -20px rgba(12,22,30,.45); padding: 18px 18px 16px; font: 15px/1.45 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif; }
+.apx-panneau h2 { font: 600 19px/1.2 'Space Grotesk', 'Segoe UI', sans-serif; letter-spacing: -.02em; margin: 0 0 4px; color: #14222c; }
+.apx-panneau .apx-page { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #586874; margin: 0 0 12px; }
+.apx-panneau p { margin: 0 0 10px; color: #3d4f5c; font-size: 14px; }
+.apx-panneau label { display: block; font-size: 13px; font-weight: 500; margin: 10px 0 4px; color: #14222c; }
+.apx-panneau textarea, .apx-panneau input { width: 100%; box-sizing: border-box; border: 1px solid #c9d3da; border-radius: 8px; padding: 9px 10px; font: 15px/1.4 'Inter', 'Segoe UI', sans-serif; color: #14222c; background: #f7f9fa; }
+.apx-panneau textarea { min-height: 110px; resize: vertical; }
+.apx-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.apx-actions button { border-radius: 6px; padding: 10px 14px; font: 500 14px/1.1 'Inter', 'Segoe UI', sans-serif; cursor: pointer; border: 1px solid #1b6a8f; background: #1b6a8f; color: #fff; }
+.apx-actions button.apx-second { background: #fff; color: #134f6b; border-color: #c9d3da; }
+.apx-actions button:hover { filter: brightness(1.08); }
+.apx-etat { font-size: 13px; color: #1b6a8f; min-height: 1.2em; margin: 8px 0 0; }
+.apx-pied { border-top: 1px solid #e3e9ed; margin-top: 12px; padding-top: 10px; font-size: 12.5px; color: #586874; }
+.apx-pied a { color: #134f6b; }
+.apx-fermer { position: absolute; top: 10px; right: 10px; background: none; border: 0; font-size: 22px; line-height: 1; color: #586874; cursor: pointer; padding: 4px 8px; }
+.apx-toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 9002; background: #14222c; color: #fff; padding: 10px 16px; border-radius: 8px; font: 14px/1.35 'Inter', 'Segoe UI', sans-serif; max-width: calc(100vw - 40px); box-shadow: 0 12px 30px -12px rgba(12,22,30,.5); }
+.apercu-video { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 100%; height: 100%; min-height: 160px; background: #14222c; color: #fff; font: 600 16px/1.2 'Inter', sans-serif; text-align: center; padding: 16px; box-sizing: border-box; }
+.apercu-video small { font-weight: 400; font-size: 13px; color: #c9d6df; }
+@media print { .apx-bouton, .apx-panneau { display: none; } }
+</style>
+<button class="apx-bouton" type="button" id="apx-bouton" aria-expanded="false" aria-controls="apx-panneau">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+  Donner mon avis
+</button>
+<div class="apx-panneau" id="apx-panneau" role="dialog" aria-labelledby="apx-titre" hidden data-uncommentable>
+  <button class="apx-fermer" type="button" id="apx-fermer" aria-label="Fermer">×</button>
+  <h2 id="apx-titre">Votre avis sur cette page</h2>
+  <div class="apx-page">Page : Impression générale</div>
+  <p>Ce qui vous plaît, ce qui vous gêne, ce qui manque : tout est utile, même en une phrase.</p>
+  <label for="apx-texte">Votre remarque</label>
+  <textarea id="apx-texte" maxlength="3500" placeholder="Par exemple : le texte d'accueil est clair, mais je ne trouve pas les tarifs."></textarea>
+  <label for="apx-nom">Votre prénom (facultatif)</label>
+  <input id="apx-nom" type="text" maxlength="80" autocomplete="given-name">
+  <div class="apx-actions">
+    <button type="button" id="apx-envoyer" hidden>Envoyer à Antonin</button>
+    <button type="button" id="apx-commenter" hidden>Poster ici, sur la page</button>
+    <button type="button" id="apx-copier" class="apx-second">Copier pour l'envoyer à Antonin</button>
+  </div>
+  <div class="apx-etat" id="apx-etat" role="status" aria-live="polite"></div>
+  <div class="apx-pied">Aperçu de travail : les formulaires et les vidéos sont désactivés, et seule une partie des billets est incluse. <a href="accueil.html">Entrer sur le site</a></div>
+</div>
+<script>
+(function () {
+  var bouton = document.getElementById('apx-bouton'), panneau = document.getElementById('apx-panneau');
+  var texte = document.getElementById('apx-texte'), nom = document.getElementById('apx-nom'), etat = document.getElementById('apx-etat');
+  var btnCommenter = document.getElementById('apx-commenter'), btnCopier = document.getElementById('apx-copier');
+  var page = document.querySelector('.apx-page').textContent.replace(/^Page : /, ''), cle = 'apx-brouillon:' + location.pathname;
+  function ouvrir(v) { panneau.hidden = !v; bouton.setAttribute('aria-expanded', v ? 'true' : 'false'); if (v) texte.focus(); }
+  bouton.addEventListener('click', function () { ouvrir(panneau.hidden); });
+  document.getElementById('apx-fermer').addEventListener('click', function () { ouvrir(false); bouton.focus(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panneau.hidden) { ouvrir(false); bouton.focus(); } });
+  try { texte.value = localStorage.getItem(cle) || ''; nom.value = localStorage.getItem('apx-nom') || ''; } catch (e) {}
+  texte.addEventListener('input', function () { try { localStorage.setItem(cle, texte.value); } catch (e) {} });
+  nom.addEventListener('input', function () { try { localStorage.setItem('apx-nom', nom.value); } catch (e) {} });
+
+  function message() {
+    return 'Avis sur le nouveau site, page « ' + page + ' »' + (nom.value.trim() ? ' (de ' + nom.value.trim() + ')' : '') + ' :\n' + texte.value.trim();
+  }
+  btnCopier.addEventListener('click', function () {
+    if (!texte.value.trim()) { etat.textContent = 'Écrivez d\'abord votre remarque.'; texte.focus(); return; }
+    var m = message();
+    var repli = function () { texte.value = m; texte.select(); etat.textContent = 'Le texte est sélectionné : copiez-le (Ctrl+C) puis envoyez-le à Antonin par mail ou message.'; };
+    try {
+      navigator.clipboard.writeText(m).then(function () { etat.textContent = 'Copié. Collez-le dans un mail ou un message à Antonin.'; }, repli);
+    } catch (e) { repli(); }
+  });
+
+  // Envoi direct (version publiée hors de Claude) : même service que les formulaires du site
+  var btnEnvoyer = document.getElementById('apx-envoyer');
+  if (window.APX_WEB3) {
+    btnEnvoyer.hidden = false; btnCopier.textContent = 'Ou copier le texte';
+    btnEnvoyer.addEventListener('click', function () {
+      if (!texte.value.trim()) { etat.textContent = 'Écrivez d\'abord votre remarque.'; texte.focus(); return; }
+      btnEnvoyer.disabled = true; btnEnvoyer.textContent = 'Envoi…'; etat.textContent = '';
+      fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ access_key: window.APX_WEB3, from_name: 'Aperçu du nouveau site', subject: '[Avis site] ' + page + (nom.value.trim() ? ' | ' + nom.value.trim() : ''),
+          name: nom.value.trim() || 'Anonyme', page: page, adresse: location.href, message: texte.value.trim() }) })
+        .then(function (r) { return r.json(); })
+        .then(function (r) {
+          if (!r.success) throw new Error('refus');
+          texte.value = ''; try { localStorage.removeItem(cle); } catch (e) {}
+          etat.textContent = 'Merci, votre avis est bien parti. Vous pouvez en envoyer un autre sur n\'importe quelle page.';
+        })
+        .catch(function () { etat.textContent = 'L\'envoi n\'a pas marché. Copiez votre texte et envoyez-le à Antonin par mail ou message.'; })
+        .then(function () { btnEnvoyer.disabled = false; btnEnvoyer.textContent = 'Envoyer à Antonin'; });
+    });
+  }
+
+  // Commentaire posé directement sur la page (pour les personnes connectées qui peuvent commenter)
+  var comments = null;
+  if (window.claude && window.claude.use) {
+    window.claude.use('comments').then(function (c) { if (c) { comments = c; btnCommenter.hidden = false; btnCopier.textContent = 'Ou copier pour l\'envoyer'; } }, function () {});
+  }
+  btnCommenter.addEventListener('click', function () {
+    if (!comments) return;
+    // le commentaire s'accroche à la partie de la page visible au milieu de l'écran
+    ouvrir(false);
+    var el = document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 2);
+    var zone = (el && el.closest('section, article, header, figure, .wrap')) || document.querySelector('main') || document.body;
+    comments.openComposer({ element: zone }).then(function (r) {
+      if (!r || !r.opened) { ouvrir(true); etat.textContent = 'La fenêtre de commentaire ne s\'est pas ouverte. Cliquez dans la page, puis réessayez, ou copiez votre avis.'; }
+      else if (texte.value.trim()) { try { navigator.clipboard.writeText(texte.value.trim()); } catch (e) {} }
+    }, function () { btnCommenter.hidden = true; ouvrir(true); etat.textContent = 'Le commentaire sur la page n\'est pas disponible ici : copiez votre avis pour l\'envoyer.'; });
+  });
+
+  // Pages absentes de l'aperçu, formulaires désactivés
+  var toastEl = null, minuteur = null;
+  function toast(t) {
+    if (!toastEl) { toastEl = document.createElement('div'); toastEl.className = 'apx-toast'; toastEl.setAttribute('role', 'status'); document.body.appendChild(toastEl); }
+    toastEl.textContent = t; toastEl.hidden = false; clearTimeout(minuteur); minuteur = setTimeout(function () { toastEl.hidden = true; }, 3200);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-hors-apercu]');
+    if (a) { e.preventDefault(); toast('Cette page n\'est pas incluse dans l\'aperçu.'); }
+  }, true);
+  document.addEventListener('submit', function (e) {
+    if (e.target.closest('.apx-panneau')) return;
+    e.preventDefault(); toast('Les formulaires sont désactivés dans l\'aperçu : rien n\'a été envoyé.');
+  }, true);
+})();
+</script>
+
+</body>
+</html>
